@@ -5,14 +5,144 @@
     <meta charset="UTF-8">
     <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Your Name Here">
+    <meta name="author" content="Mike DeAngelis">
     <meta name="description" content="Default HTML Page for SE 111">
     
     <link type="text/css" rel="stylesheet" href="style.css">
 
-    <title>Week 5 | Tables and Forms</title>
+    <title>Birthday Party Registration Form</title>
 </head>
 <body>
+
+    <h2>Labels</h2>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="firstName">First Name</label>
+
+                    </td>
+                    <td>
+                        <input type="text" id="firstName" name="firstName">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastName">Last Name</label>
+
+                    </td>
+                    <td>
+                        <input type="text" id="lastName" name="lastName">
+
+                    </td>
+                    <td>
+                        <label form="childName">Child's Name</label>
+
+                    </td>
+                    <td>
+                        <input type="text" id="childName" name="childName">
+
+                    </td>
+                    <td>
+                        <label for="childAge">Child's Age</label>
+
+                    </td>
+                    <td>
+                        <input type="text" id="childAge" name="childAge">
+
+                    </td>
+                </tr>
+                <tr>
+
+                    <h2>Date & Time</h2>
+
+                    <td>
+                        <label for="date">Date:</label>
+
+                    </td>
+                    <td>
+                        <input type="date" id="date" name="date">
+
+                    </td>
+                    <td>
+                        <label for="time">Start Time</label>
+
+                    </td>
+                    <td>
+                        <label for="numGuests">Number of Guests</label>
+
+                    </td>
+                    <td>
+                        <input type="text" id="numGuests" name="numGuests">
+
+                    </td>
+                </tr>
+                <tr>
+
+                    <h2>Food & Drinks</h2>
+
+                    <td>
+                        <label for="food">Choose Snacks:</label>
+                    </td>
+                    <td>
+                        <select name="food">
+                            <option value="d">Doritos</option>
+                            <option value="p">Popcorn</option>
+                            <option value="t">Tostitos</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="drinks">Choose Drinks:</label>
+                    </td>
+                    <td>
+                        <select name="drinks">
+                            <option value="dr">Dr. Pepper</option>
+                            <option value="c">Coca-Cola</option>
+                            <option value="s">Sprite</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="cake">Pick Flavor of Cake:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="cake" name="cake" value="str">Strawberry Shortcake <br>
+                        <input type="radio" id="cake" name="cake" value="chc">Chocolate <br>
+                        <input type="radio" id="cake" name="cake" value="v">Vanilla <br> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="decor">Decoration Color:</label>
+                    </td>
+                    <td>
+                        <select name="decor">
+                            <option value="pink">Pink</option>
+                            <option value="bl">Blue</option>
+                            <option value="purp">Purple</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addInformation">Additional Information</label>
+                    </td>
+                    <td>
+                        <textarea name="addInformation" row=5 cols=20 placeholder="Additional Information"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="SUBMIT">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+
     <!--Build your Table and Form here-->
     
 </body>

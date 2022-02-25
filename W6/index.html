@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <script>
+
+        var hourlyPay = window.prompt("Enter your hourly pay: ").number(); alert("Your hourly pay is " +hourlyPay)
+        var hoursWorked = window.prompt("Enter your hours worked per week: ").number(); alert("Your hours worked are " +hoursWorked)
+        var taxRate = window.prompt("Enter the current tax rate: "); alert("Your tax rate is " +taxRate)
+
+        var hoursTotal = (hoursWorked * 2).number()
+
+        var grossPay = (hoursTotal * hourlyPay).number()
+
+        var uncleSam = (grossPay * taxRate).number()
+
+        var netPay = (grossPay - uncleSam).number()
+
+        function alert(a)
+        {
+            console.log(grossPay).toFixed(2)
+            console.log(uncleSam).toFixed(2)
+            console.log(netPay).toFixed(2)
+        
+
+            function submitNow(a)
+            {
+                alert(' ${grossPay}\nGross Pay: ')
+            
+            
+            
+            
+            }
+
+
+
+        }
+    </script>
 </body>
 </html>
