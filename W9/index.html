@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        .red 
+        {
+        
+        border:1px solid red;
+        
+        margin-bottom:10px;
+        
+        min-height:20px;
+        
+        }
+        
+    </style>
+
+    <script>
+
+        console.log(people)
+        console.log(people[1])
+
+        console.log(people[1].first)
+
+
+        var body = document.querySelector(`body`)
+
+        console.log(body)
+        console.dir(body)
+        console.log(body.children[0])
+        console.log(body.parentElement)
+
+        for(let i = 0; i < people.length; i++)
+
+        var tempDiv = document.createElement(`div`)
+
+        tempDiv.setAttribute(`id`, String(i))
+        tempDiv.setAttribute(`class`, `red`)
+
+        for(let key in people[i])
+        {
+            var p = document.createElement(`p`)
+            p.setAttribute(`class`, `${key}`)
+
+            var text = document.createTextNode(people[i][key])
+
+            p.appendChild(text)
+
+            tempDiv.appendChild(p)
+        }
+
+        console.log(tempDiv)
+
+        body.appendChild(tempDiv)
+
+    </script>
+
+</body>
+</html>
