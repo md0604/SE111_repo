@@ -14,30 +14,34 @@
 </head>
 <body>
 
-    <h2>Labels</h2>
-
+    <head>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <h2>Labels</h2>
+                    </td>
+                </tr>                
+            </thead>
+        </table>
+    </head>
     <form>
         <table>
             <tbody>
                 <tr>
                     <td>
                         <label for="firstName">First Name</label>
-
+                        <br>
+                        <label for="lastName">Last Name</label>
                     </td>
                     <td>
                         <input type="text" id="firstName" name="firstName">
-
+                        <br>
+                        <input type="text" id="lastName" name="lastName">
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="lastName">Last Name</label>
-
-                    </td>
-                    <td>
-                        <input type="text" id="lastName" name="lastName">
-
-                    </td>
+                   
                     <td>
                         <label form="childName">Child's Name</label>
 
@@ -46,6 +50,9 @@
                         <input type="text" id="childName" name="childName">
 
                     </td>
+                <tr>
+
+                    
                     <td>
                         <label for="childAge">Child's Age</label>
 
@@ -56,8 +63,17 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        <h2>Date & Time</h2>
+                    </td>
+                    <td>
 
-                    <h2>Date & Time</h2>
+                    </td>
+                </tr>
+                <tr>
+                    
+
+                    
 
                     <td>
                         <label for="date">Date:</label>
@@ -67,22 +83,38 @@
                         <input type="date" id="date" name="date">
 
                     </td>
+                <tr>
+
+                    
                     <td>
                         <label for="time">Start Time</label>
 
                     </td>
                     <td>
+                        <input type="time" id="time" name="time">
+                    </td>
+                </tr>
+                    <td>
                         <label for="numGuests">Number of Guests</label>
 
                     </td>
+
                     <td>
                         <input type="text" id="numGuests" name="numGuests">
 
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        <h2>Food & Drinks</h2>
+                    </td>
+                    <td>
 
-                    <h2>Food & Drinks</h2>
+                    </td>
+                </tr>
+                <tr>
+
+                    
 
                     <td>
                         <label for="food">Choose Snacks:</label>
@@ -94,6 +126,8 @@
                             <option value="t">Tostitos</option>
                         </select>
                     </td>
+                </tr>
+                <tr>
                     <td>
                         <label for="drinks">Choose Drinks:</label>
                     </td>
@@ -104,6 +138,8 @@
                             <option value="s">Sprite</option>
                         </select>
                     </td>
+                </tr>
+                <tr>
                     <td>
                         <label for="cake">Pick Flavor of Cake:</label>
                     </td>
