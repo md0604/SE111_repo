@@ -5,6 +5,13 @@
 <title>Week 9 </title>
 <style type="text/css">
 	.border{border:1px solid black;}
+
+	div 
+	{
+		border:2px dotted blue;
+
+		margin-bottom:7.5px;
+	}
 </style>
 </head>
 
@@ -23,6 +30,34 @@
 		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
+
+	console.log(people[0])
+	console.log(people[0].first)
+
+	var body = document.querySelector(`body`)
+	console.log(body)
+	console.log(body)
+
+	for(let i = 0; i < people.length; i++)
+	{
+		var tempDiv = document.createElement(`div`)
+
+		tempDiv.setAttribute(`id`, i)
+
+		tempDiv.setAttribute(`class`, `red`)
+
+		for(key in people[i])
+		{
+			var p = document.createElement(`p`)
+
+			var text = document.createTextNode(people[i][key])
+
+			p.appendChild(text)
+			tempDiv.appendChild(p)
+		}
+
+		body.appendChild(tempDiv)
+	}
 	
 </script>
 
